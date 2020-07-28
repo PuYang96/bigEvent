@@ -56,3 +56,11 @@ a {
   top: 4px;
   margin-right: 10px;
 }
+.welcome {
+  width: 220px;
+  height: 45px;
+  padding: 10px 0px 0px 65px;
+}
+.layui-nav-child {
+  left: 20px;
+}
