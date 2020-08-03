@@ -16,7 +16,7 @@ function getUserInfo() {
         method: 'get',
         url: '/my/userinfo',
         success: function (res) {
-            //console.log(res);
+            // console.log(res);
             if (res.status !== 0) {
                 return layui.layer.msg('获取用户信息失败！')
             }
@@ -36,7 +36,7 @@ function renderAvatar(user) {
     // 3.按所需渲染用户的头像
     if (user.user_pic !== null) {
         // 3.1渲染图片图像
-        $('.layui-nav-img').attr('scr', user.user_pic).show()
+        $('.layui-nav-img').attr('src', user.user_pic).show()
         $('.text-avatar').hide()
     } else {
         // 3.2文本头像
